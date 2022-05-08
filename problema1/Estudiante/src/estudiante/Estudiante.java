@@ -1,67 +1,65 @@
-
 package estudiante;
 
-
 public class Estudiante {
-    
+
     private String nombre;
     private double cal1;
     private double cal2;
     private double cal3;
     private double prom;
-    
-    public Estudiante(String nom){
+
+    public Estudiante(String nom) {
         nombre = nom;
     }
-    
-    public Estudiante(String nom, double c1, double c2, double c3){
+
+    public Estudiante(String nom, double c1, double c2, double c3) {
         nombre = nom;
         cal1 = c1;
         cal2 = c2;
         cal3 = c3;
-                
+
     }
-    
-    public void establecerNombre(String c){
+
+    public void establecerNombre(String c) {
         nombre = c;
     }
-    
-    public void establecerCal1(double c){
+
+    public void establecerCal1(double c) {
         cal1 = c;
     }
-    
-    public void establecerCal2(double c){
+
+    public void establecerCal2(double c) {
         cal2 = c;
     }
-    
-    public void establecerCal3(double c){
+
+    public void establecerCal3(double c) {
         cal3 = c;
     }
-    
-    public void establecerProm(){
+
+    public void establecerProm() {
         prom = (cal1 + cal2 + cal3) / 3;
     }
-    
-    public String obtenerNombre(){
+
+    public String obtenerNombre() {
         return nombre;
     }
-    
-    public double obtenerCal1(){
+
+    public double obtenerCal1() {
         return cal1;
     }
-    
-    public double obtenerCal2(){
+
+    public double obtenerCal2() {
         return cal2;
     }
-    
-    public double obtenerCal3(){
+
+    public double obtenerCal3() {
         return cal3;
     }
-    
-    public double obtenerProm(){
+
+    public double obtenerProm() {
         return prom;
     }
-    
+
     @Override
     public String toString() {
         String cadena = String.format("Estudiante\n"
@@ -77,8 +75,5 @@ public class Estudiante {
                 obtenerProm());
         return cadena;
     }
-    
-    
-      
-}
 
+}
